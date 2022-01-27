@@ -197,6 +197,22 @@
   Expected output:
   ![Image](Pleasentcommand.jpg)
 
+Lets move the file remotely using one command line
+
+- In the most basic case, we type out commands line by line to move and run file remotely:
+  ```
+  scp WhereAmI.java cs15lwi22zz@ieng6.ucsd.edu:~/
+  $ssh cs15lwi22zz@ieng6.ucsd.edu
+  $javac WhereAmI.java
+  $java WhereAmI.java
+  ```
+- It is a very inefficient way if we want to update and run the file in the remote server. It need around **_125_** keystrokes everytime
+- An effective way of cutting down the keystrokes would be running all the command in one line\
+  `scp WhereAmI.java cs15lwi22afd@ieng6.ucsd.edu:~/; ssh cs15lwi22afd@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`\
+- This is very effecient, we only need **_two_** keystrokes after running the whole command.
+  Expected output:\
+   ![Image](Optimize.jpg)
+
 > Note \
 > We can see that by using the semicolumn in-line, we are able to run the command even more-pleasent
 
