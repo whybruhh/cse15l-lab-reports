@@ -206,12 +206,14 @@ Lets move the file remotely using one command line
   $javac WhereAmI.java
   $java WhereAmI.java
   ```
-- It is a very inefficient way if we want to update and run the file in the remote server. It need around **_125_** keystrokes everytime
+- It is a very inefficient way if we want to update and run the file in the remote server. It need around **_125_** keystrokes everytime. We need a **_long time_** to type the whole command out. The whole process take around **_1.5 minutes_**
 - An effective way of cutting down the keystrokes would be running all the command in one line\
   `scp WhereAmI.java cs15lwi22afd@ieng6.ucsd.edu:~/; ssh cs15lwi22afd@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"`\
 - This is very effecient, we only need **_two_** keystrokes after running the whole command.
   Expected output:\
    ![Image](Optimize.jpg)
+- It only take around **_30 second_** to run the whole command
+- By typing all comment in one line, it **_shorten our time_** a lot!
 
 > Note \
 > We can see that by using the semicolumn in-line, we are able to run the command even more-pleasent
