@@ -22,10 +22,10 @@
 - I add a line of code `markdown.charAt(nextCloseBracket + 1) == '('` to check if there is close parentheses after close bracket. It break the while loop if the condition don't match.
 
 - Here I fix the code
-  ![Image](FixFirstbug.png)
+  ![Image](FixFirstbug.jpg)
 
 - It fixed the first bug successfully!
-  ![Image](FixedFirstbug.png)
+  ![Image](Fixedfirstbug.jpg)
 
 ---
 
@@ -50,7 +50,7 @@
 
 - The result is 75,40,75,73
 
-- I notice that the bug here is because of the index of **second** close parentheses is two smaller than the `markdown.length()` . Which mean current index is always one smaller than `markdown.length()`.
+- I notice that the bug here is because of the index of **last** close parentheses is two smaller than the `markdown.length()` . Which mean current index is always one smaller than `markdown.length()`.
 
 - So, it start the loop again and again, causing an **_infinite loop_** bug.
 
