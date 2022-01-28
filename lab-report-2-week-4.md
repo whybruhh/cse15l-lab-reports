@@ -1,6 +1,6 @@
 # Week 4 lab Report
 
-- In this lab I am going ot go over the debugging process for code that prints all valid links in a markdown file.
+- In this lab I am going to go over the debugging process for code that prints all valid links in a markdown file.
 
 > Let's get started
 
@@ -48,7 +48,9 @@
   2. checking Markdown length
      ![Image](CheckSecBug.jpg)
 
-- I notice that the bug here is because of close parentheses is always two smaller than the `markdown.length()`. Which mean current index is always one smaller than `markdown.length()`.
+- The result is 75,40,75,73
+
+- I notice that the bug here is because of the index of **second** close parentheses is two smaller than the `markdown.length()` . Which mean current index is always one smaller than `markdown.length()`.
 
 - So, it start the loop again and again, causing an **_infinite loop_** bug.
 
@@ -82,12 +84,13 @@
 
 - I add a line of code\
   `if (markdown.substring(openParen + 1, closeParen).contains(".com") || markdown.substring(openParen + 1, closeParen).contains(".html")) } `
-  to check if it is a valid link
+
+  to check if it there is a valid link inside the parentheses
 
 - Here I fix the code
   ![Image](fixBug4.jpg)
 
-- If either one of the condition above is true, the program would add the valid link to **toReturn** list, else it would break the loop and don't return anything
+- If either one of the condition above is true, the program would add the valid link to the **toReturn** list, else it would break the loop and don't return anything
 
 - It fixed the third bug successfully!
   ![Image](FixedBug4.jpg)
