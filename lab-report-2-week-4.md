@@ -93,5 +93,6 @@
   ![Image](FixedBug4.jpg)
 
 ---
+
 That is the end of the week 4 lab report\
 **Thank You very much for reading ^v^**
