@@ -21,7 +21,7 @@
 4. Press the New SSH Key button Then copy all the public key to github.
    ![Image](github.jpg)
 
-5. we have to make sure our git is using SSH instead of HTTPS protocol [reference](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+5. we have to make sure our git is using [SSH instead of HTTPS protocol](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
 
    ![Image](remote.jpg)
 
