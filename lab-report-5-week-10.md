@@ -35,7 +35,9 @@ The bug:
 ![Image](code482.jpg)
 
 Notice how in the above code the break is called after the IndexOutOfBoundsException is thrown when trying to check before the first "[". Instead of breaking, this execute the same code as inside the if statement, as it implicitly means that there is no "!" before the "[", making it a good link in this context.
+
 ___
+
 Here is the end of my lab report. Thank you very much.
 
 
